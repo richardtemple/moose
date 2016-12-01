@@ -25,6 +25,7 @@ module Moose
       :rerun_failed => false,
       :show_full_error_backtrace => false,
       :test_status_persistence_directory => nil,
+      :message_colors => {}
     }
 
     attr_accessor *DEFAULTS.keys

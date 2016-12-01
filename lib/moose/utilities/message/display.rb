@@ -50,7 +50,7 @@ module Moose
 
         def pending
           with_checks do
-            with_background(:magenta)
+            with_background( Moose.configuration.message_colors[:pending_background] || :magenta )
           end
         end
 
@@ -114,7 +114,8 @@ module Moose
 
         def name
           with_checks do
-            with_background(:cyan)
+            binding.pry
+            with_background( Moose.configuration.message_colors[:name_background] || :magenta )
           end
         end
 
